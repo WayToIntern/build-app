@@ -82,7 +82,7 @@ jobs:
         run: |
           xcodebuild -exportArchive \
             -archivePath ./build/buildapp.xcarchive \
-            -exportOptionsPlist ./build/buildapp.xcarchive/Info.plist \
+            -exportOptionsPlist exportOptions.plist \
             -exportPath ./build
 
       - name: Upload application
