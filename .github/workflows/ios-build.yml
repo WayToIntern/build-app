@@ -81,7 +81,7 @@ jobs:
           EXPORT_OPTIONS_PLIST: ${{ secrets.EXPORT_OPTIONS_PLIST }}
         run: |
           xcodebuild -exportArchive \
-            -archivePath ./build/buildapp.xcarchive \
+            -archivePath ./buildapp.xcarchive \
             -exportOptionsPlist ExportOptions.plist \
             -exportPath ./build
 
